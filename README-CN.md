@@ -547,6 +547,12 @@ learn-harness-engineering/
 
 ---
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=walkinglabs/learn-harness-engineering&type=date&legend=top-left)](https://www.star-history.com/#walkinglabs/learn-harness-engineering&type=date&legend=top-left)
+
+---
+
 ## 致谢
 
 本课程的灵感和部分思路来自 [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) —— 一个从零开始搭建 agent 的渐进式教程，从单个循环到隔离的自主执行。

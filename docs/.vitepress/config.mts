@@ -228,10 +228,239 @@ const koSkillItems = [
   { text: "스킬 개요", link: "/ko/skills/" }
 ];
 
+const jaLectureItems = [
+  { text: "ようこそ", link: "/ja/" },
+  { text: "強いモデルは信頼できる実行を意味しない", link: "/ja/lectures/lecture-01-why-capable-agents-still-fail/" },
+  { text: "Harness とは何か", link: "/ja/lectures/lecture-02-what-a-harness-actually-is/" },
+  { text: "リポジトリを唯一の信頼できる情報源にする", link: "/ja/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "指示を複数ファイルに分割する", link: "/ja/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
+  { text: "セッションをまたいでコンテキストを保つ", link: "/ja/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "すべてのエージェントセッション前に初期化する", link: "/ja/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
+  { text: "エージェントのタスク境界を明確にする", link: "/ja/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
+  { text: "機能リストでエージェントの作業を制約する", link: "/ja/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
+  { text: "エージェントの早すぎる完了宣言を防ぐ", link: "/ja/lectures/lecture-09-why-agents-declare-victory-too-early/" },
+  { text: "End-to-End テストだけが本当の検証である", link: "/ja/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
+  { text: "エージェントのランタイムを観測可能にする", link: "/ja/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "すべてのセッションをきれいな引き継ぎで終える", link: "/ja/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+];
+
+const jaProjectItems = [
+  { text: "ようこそ", link: "/ja/projects/" },
+  { text: "プロンプトのみ vs ルール優先", link: "/ja/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "プロジェクトを読みやすくし、中断地点から再開する", link: "/ja/projects/project-02-agent-readable-workspace/" },
+  { text: "セッション再起動後もエージェントが作業を続ける", link: "/ja/projects/project-03-multi-session-continuity/" },
+  { text: "ランタイムフィードバックでエージェントの挙動を修正する", link: "/ja/projects/project-04-incremental-indexing/" },
+  { text: "エージェントに自分の作業を検証させる", link: "/ja/projects/project-05-grounded-qa-verification/" },
+  { text: "完全なエージェント harness を構築する（総合課題）", link: "/ja/projects/project-06-runtime-observability-and-debugging/" }
+];
+
+const jaResourceItems = [
+  { text: "概要", link: "/ja/resources/" },
+  { text: "テンプレート", link: "/ja/resources/templates/" },
+  { text: "リファレンス", link: "/ja/resources/reference/" },
+  { text: "高度なパック", link: "/ja/resources/openai-advanced/" }
+];
+
+const jaSkillItems = [
+  { text: "スキル概要", link: "/ja/skills/" }
+];
+
+const esLectureItems = [
+  { text: "Bienvenido", link: "/es/" },
+  { text: "Los modelos fuertes no significan ejecución fiable", link: "/es/lectures/lecture-01-why-capable-agents-still-fail/" },
+  { text: "Qué significa realmente harness", link: "/es/lectures/lecture-02-what-a-harness-actually-is/" },
+  { text: "Convierte el repositorio en la fuente única de verdad", link: "/es/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "Divide las instrucciones entre archivos", link: "/es/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
+  { text: "Mantén vivo el contexto entre sesiones", link: "/es/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "Inicializa antes de cada sesión del agente", link: "/es/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
+  { text: "Define límites claros para las tareas del agente", link: "/es/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
+  { text: "Usa listas de funciones para limitar al agente", link: "/es/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
+  { text: "Evita que los agentes declaren victoria demasiado pronto", link: "/es/lectures/lecture-09-why-agents-declare-victory-too-early/" },
+  { text: "Solo las pruebas end-to-end son verificación real", link: "/es/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
+  { text: "Haz observable el runtime del agente", link: "/es/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "Deja un handoff limpio al final de cada sesión", link: "/es/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+];
+
+const esProjectItems = [
+  { text: "Bienvenido", link: "/es/projects/" },
+  { text: "Solo prompt vs reglas primero", link: "/es/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "Haz el proyecto legible y retoma el trabajo", link: "/es/projects/project-02-agent-readable-workspace/" },
+  { text: "Mantén al agente trabajando tras reiniciar sesiones", link: "/es/projects/project-03-multi-session-continuity/" },
+  { text: "Usa feedback de runtime para corregir el comportamiento", link: "/es/projects/project-04-incremental-indexing/" },
+  { text: "Haz que el agente verifique su propio trabajo", link: "/es/projects/project-05-grounded-qa-verification/" },
+  { text: "Construye un harness completo (capstone)", link: "/es/projects/project-06-runtime-observability-and-debugging/" }
+];
+
+const esResourceItems = [
+  { text: "Resumen", link: "/es/resources/" },
+  { text: "Plantillas", link: "/es/resources/templates/" },
+  { text: "Referencia", link: "/es/resources/reference/" },
+  { text: "Paquete avanzado", link: "/es/resources/openai-advanced/" }
+];
+
+const esSkillItems = [
+  { text: "Resumen de Skills", link: "/es/skills/" }
+];
+
+const frLectureItems = [
+  { text: "Bienvenue", link: "/fr/" },
+  { text: "Les modèles forts ne garantissent pas une exécution fiable", link: "/fr/lectures/lecture-01-why-capable-agents-still-fail/" },
+  { text: "Ce que signifie vraiment harness", link: "/fr/lectures/lecture-02-what-a-harness-actually-is/" },
+  { text: "Faire du dépôt la source unique de vérité", link: "/fr/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "Répartir les instructions entre fichiers", link: "/fr/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
+  { text: "Garder le contexte vivant entre les sessions", link: "/fr/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "Initialiser avant chaque session d'agent", link: "/fr/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
+  { text: "Définir des limites de tâche claires", link: "/fr/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
+  { text: "Utiliser les listes de fonctionnalités pour contraindre l'agent", link: "/fr/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
+  { text: "Empêcher les agents de déclarer victoire trop tôt", link: "/fr/lectures/lecture-09-why-agents-declare-victory-too-early/" },
+  { text: "Seul le test end-to-end est une vraie vérification", link: "/fr/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
+  { text: "Rendre le runtime de l'agent observable", link: "/fr/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "Laisser un handoff propre à la fin de chaque session", link: "/fr/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+];
+
+const frProjectItems = [
+  { text: "Bienvenue", link: "/fr/projects/" },
+  { text: "Prompt seul vs règles d'abord", link: "/fr/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "Rendre le projet lisible et reprendre", link: "/fr/projects/project-02-agent-readable-workspace/" },
+  { text: "Garder l'agent au travail après les redémarrages", link: "/fr/projects/project-03-multi-session-continuity/" },
+  { text: "Utiliser le feedback runtime pour corriger le comportement", link: "/fr/projects/project-04-incremental-indexing/" },
+  { text: "Faire vérifier son propre travail par l'agent", link: "/fr/projects/project-05-grounded-qa-verification/" },
+  { text: "Construire un harness complet (capstone)", link: "/fr/projects/project-06-runtime-observability-and-debugging/" }
+];
+
+const frResourceItems = [
+  { text: "Aperçu", link: "/fr/resources/" },
+  { text: "Modèles", link: "/fr/resources/templates/" },
+  { text: "Référence", link: "/fr/resources/reference/" },
+  { text: "Pack avancé", link: "/fr/resources/openai-advanced/" }
+];
+
+const frSkillItems = [
+  { text: "Aperçu des Skills", link: "/fr/skills/" }
+];
+
+const deLectureItems = [
+  { text: "Willkommen", link: "/de/" },
+  { text: "Starke Modelle bedeuten keine zuverlässige Ausführung", link: "/de/lectures/lecture-01-why-capable-agents-still-fail/" },
+  { text: "Was harness wirklich bedeutet", link: "/de/lectures/lecture-02-what-a-harness-actually-is/" },
+  { text: "Das Repository zur einzigen Quelle der Wahrheit machen", link: "/de/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "Anweisungen auf Dateien verteilen", link: "/de/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
+  { text: "Kontext über Sessions hinweg erhalten", link: "/de/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "Vor jeder Agenten-Session initialisieren", link: "/de/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
+  { text: "Klare Aufgabengrenzen für Agenten ziehen", link: "/de/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
+  { text: "Feature-Listen nutzen, um Agentenarbeit zu begrenzen", link: "/de/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
+  { text: "Verhindern, dass Agenten zu früh Erfolg melden", link: "/de/lectures/lecture-09-why-agents-declare-victory-too-early/" },
+  { text: "Nur End-to-End-Tests sind echte Verifikation", link: "/de/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
+  { text: "Die Runtime des Agenten beobachtbar machen", link: "/de/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "Sauberes Handoff am Ende jeder Session", link: "/de/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+];
+
+const deProjectItems = [
+  { text: "Willkommen", link: "/de/projects/" },
+  { text: "Nur Prompt vs Regeln zuerst", link: "/de/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "Das Projekt lesbar machen und weiterarbeiten", link: "/de/projects/project-02-agent-readable-workspace/" },
+  { text: "Den Agenten über Session-Neustarts hinweg weiterarbeiten lassen", link: "/de/projects/project-03-multi-session-continuity/" },
+  { text: "Runtime-Feedback nutzen, um Agentenverhalten zu korrigieren", link: "/de/projects/project-04-incremental-indexing/" },
+  { text: "Den Agenten seine eigene Arbeit verifizieren lassen", link: "/de/projects/project-05-grounded-qa-verification/" },
+  { text: "Einen vollständigen Agenten-harness bauen (Capstone)", link: "/de/projects/project-06-runtime-observability-and-debugging/" }
+];
+
+const deResourceItems = [
+  { text: "Übersicht", link: "/de/resources/" },
+  { text: "Vorlagen", link: "/de/resources/templates/" },
+  { text: "Referenz", link: "/de/resources/reference/" },
+  { text: "Erweitertes Paket", link: "/de/resources/openai-advanced/" }
+];
+
+const deSkillItems = [
+  { text: "Skills Übersicht", link: "/de/skills/" }
+];
+
+const arLectureItems = [
+  { text: "مرحبًا", link: "/ar/" },
+  { text: "النماذج القوية لا تعني تنفيذًا موثوقًا", link: "/ar/lectures/lecture-01-why-capable-agents-still-fail/" },
+  { text: "ما معنى harness فعليًا", link: "/ar/lectures/lecture-02-what-a-harness-actually-is/" },
+  { text: "اجعل المستودع مصدر الحقيقة الوحيد", link: "/ar/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "قسّم التعليمات عبر ملفات", link: "/ar/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
+  { text: "حافظ على السياق عبر الجلسات", link: "/ar/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "هيئ قبل كل جلسة وكيل", link: "/ar/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
+  { text: "ارسم حدود مهمة واضحة للوكلاء", link: "/ar/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
+  { text: "استخدم قوائم الميزات لتقييد الوكيل", link: "/ar/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
+  { text: "منع الوكلاء من إعلان النجاح مبكرًا", link: "/ar/lectures/lecture-09-why-agents-declare-victory-too-early/" },
+  { text: "الاختبار end-to-end هو التحقق الحقيقي", link: "/ar/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
+  { text: "اجعل runtime الوكيل قابلًا للملاحظة", link: "/ar/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "اترك handoff نظيفًا في نهاية كل جلسة", link: "/ar/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+];
+
+const arProjectItems = [
+  { text: "مرحبًا", link: "/ar/projects/" },
+  { text: "Prompt فقط مقابل القواعد أولًا", link: "/ar/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "اجعل المشروع قابلًا للقراءة واستأنف", link: "/ar/projects/project-02-agent-readable-workspace/" },
+  { text: "أبقِ الوكيل يعمل بعد إعادة تشغيل الجلسات", link: "/ar/projects/project-03-multi-session-continuity/" },
+  { text: "استخدم feedback في runtime لتصحيح سلوك الوكيل", link: "/ar/projects/project-04-incremental-indexing/" },
+  { text: "اجعل الوكيل يتحقق من عمله", link: "/ar/projects/project-05-grounded-qa-verification/" },
+  { text: "ابنِ harness كاملًا للوكيل (Capstone)", link: "/ar/projects/project-06-runtime-observability-and-debugging/" }
+];
+
+const arResourceItems = [
+  { text: "نظرة عامة", link: "/ar/resources/" },
+  { text: "قوالب", link: "/ar/resources/templates/" },
+  { text: "مرجع", link: "/ar/resources/reference/" },
+  { text: "حزمة متقدمة", link: "/ar/resources/openai-advanced/" }
+];
+
+const arSkillItems = [
+  { text: "نظرة عامة على المهارات", link: "/ar/skills/" }
+];
+
+const zhTWLectureItems = [
+  { text: "歡迎", link: "/zh-TW/" },
+  { text: "模型能力強，不等於執行可靠", link: "/zh-TW/lectures/lecture-01-why-capable-agents-still-fail/" },
+  { text: "Harness 到底是什麼", link: "/zh-TW/lectures/lecture-02-what-a-harness-actually-is/" },
+  { text: "讓代碼倉庫成為唯一的事實來源", link: "/zh-TW/lectures/lecture-03-why-the-repository-must-become-the-system-of-record/" },
+  { text: "把指令拆分到不同檔案裡", link: "/zh-TW/lectures/lecture-04-why-one-giant-instruction-file-fails/" },
+  { text: "讓跨會話的任務保持上下文連續", link: "/zh-TW/lectures/lecture-05-why-long-running-tasks-lose-continuity/" },
+  { text: "讓 agent 每次工作前先初始化", link: "/zh-TW/lectures/lecture-06-why-initialization-needs-its-own-phase/" },
+  { text: "給 agent 劃清每次任務的邊界", link: "/zh-TW/lectures/lecture-07-why-agents-overreach-and-under-finish/" },
+  { text: "用功能清單約束 agent 該做什麼", link: "/zh-TW/lectures/lecture-08-why-feature-lists-are-harness-primitives/" },
+  { text: "防止 agent 提前宣告完成", link: "/zh-TW/lectures/lecture-09-why-agents-declare-victory-too-early/" },
+  { text: "跑通完整流程才算真正驗證", link: "/zh-TW/lectures/lecture-10-why-end-to-end-testing-changes-results/" },
+  { text: "讓 agent 的運行過程可觀測", link: "/zh-TW/lectures/lecture-11-why-observability-belongs-inside-the-harness/" },
+  { text: "每次會話結束前都做好交接", link: "/zh-TW/lectures/lecture-12-why-every-session-must-leave-a-clean-state/" }
+];
+
+const zhTWProjectItems = [
+  { text: "歡迎", link: "/zh-TW/projects/" },
+  { text: "提示詞驅動 vs 規則驅動", link: "/zh-TW/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "讓 agent 看懂項目、接住上次的工作", link: "/zh-TW/projects/project-02-agent-readable-workspace/" },
+  { text: "讓 agent 關掉再打開還能接著幹", link: "/zh-TW/projects/project-03-multi-session-continuity/" },
+  { text: "用運行反饋修正 agent 的行為", link: "/zh-TW/projects/project-04-incremental-indexing/" },
+  { text: "讓 agent 自己檢查自己做的對不對", link: "/zh-TW/projects/project-05-grounded-qa-verification/" },
+  { text: "搭建一套完整的 agent 工作環境", link: "/zh-TW/projects/project-06-runtime-observability-and-debugging/" }
+];
+
+const zhTWResourceItems = [
+  { text: "資料庫總覽", link: "/zh-TW/resources/" },
+  { text: "繁體中文範本", link: "/zh-TW/resources/templates/" },
+  { text: "繁體中文參考", link: "/zh-TW/resources/reference/" },
+  { text: "進階資源包", link: "/zh-TW/resources/openai-advanced/" }
+];
+
+const zhTWSkillItems = [
+  { text: "技能總覽", link: "/zh-TW/skills/" }
+];
+
+const jaSourceItems = { lectures: jaLectureItems, projects: jaProjectItems, resources: jaResourceItems, skills: jaSkillItems };
+const esSourceItems = { lectures: esLectureItems, projects: esProjectItems, resources: esResourceItems, skills: esSkillItems };
+const frSourceItems = { lectures: frLectureItems, projects: frProjectItems, resources: frResourceItems, skills: frSkillItems };
+const deSourceItems = { lectures: deLectureItems, projects: deProjectItems, resources: deResourceItems, skills: deSkillItems };
+const arSourceItems = { lectures: arLectureItems, projects: arProjectItems, resources: arResourceItems, skills: arSkillItems };
+const zhTWSourceItems = { lectures: zhTWLectureItems, projects: zhTWProjectItems, resources: zhTWResourceItems, skills: zhTWSkillItems };
+
 const relinkItems = (items: Array<{ text: string; link: string }>, locale: string) =>
   items.map((item) => ({
     ...item,
-    link: item.link.replace(/^\/(en|zh|vi|ko|uz|ru)\//, `/${locale}/`)
+    link: item.link.replace(/^\/(en|zh|vi|ko|uz|ru|ja|es|fr|de|ar|zh-TW)\//, `/${locale}/`)
   }));
 
 const createLocaleTheme = (
@@ -426,7 +655,7 @@ export default withMermaid(
         label: "繁體中文",
         lang: "zh-TW",
         link: "/zh-TW/",
-        themeConfig: createLocaleTheme("zh-TW", zhSourceItems, {
+        themeConfig: createLocaleTheme("zh-TW", zhTWSourceItems, {
           lectures: "講義",
           projects: "專案",
           resources: "資源庫",
@@ -447,7 +676,7 @@ export default withMermaid(
         label: "日本語",
         lang: "ja-JP",
         link: "/ja/",
-        themeConfig: createLocaleTheme("ja", enSourceItems, {
+        themeConfig: createLocaleTheme("ja", jaSourceItems, {
           lectures: "講義",
           projects: "プロジェクト",
           resources: "リソース",
@@ -469,7 +698,7 @@ export default withMermaid(
         label: "Español",
         lang: "es-ES",
         link: "/es/",
-        themeConfig: createLocaleTheme("es", enSourceItems, {
+        themeConfig: createLocaleTheme("es", esSourceItems, {
           lectures: "Lecciones",
           projects: "Proyectos",
           resources: "Biblioteca",
@@ -491,7 +720,7 @@ export default withMermaid(
         label: "Français",
         lang: "fr-FR",
         link: "/fr/",
-        themeConfig: createLocaleTheme("fr", enSourceItems, {
+        themeConfig: createLocaleTheme("fr", frSourceItems, {
           lectures: "Cours",
           projects: "Projets",
           resources: "Bibliothèque",
@@ -513,7 +742,7 @@ export default withMermaid(
         label: "Deutsch",
         lang: "de-DE",
         link: "/de/",
-        themeConfig: createLocaleTheme("de", enSourceItems, {
+        themeConfig: createLocaleTheme("de", deSourceItems, {
           lectures: "Lektionen",
           projects: "Projekte",
           resources: "Bibliothek",
@@ -535,7 +764,7 @@ export default withMermaid(
         label: "العربية",
         lang: "ar-SA",
         link: "/ar/",
-        themeConfig: createLocaleTheme("ar", enSourceItems, {
+        themeConfig: createLocaleTheme("ar", arSourceItems, {
           lectures: "المحاضرات",
           projects: "المشاريع",
           resources: "المكتبة",

@@ -69,5 +69,5 @@ graph TD
 <ul class="index-list">
   <li><a href="./lectures/lecture-01-why-capable-agents-still-fail/">L01. 模型能力強，不等於執行可靠</a>：從理論開始。</li>
   <li><a href="./projects/project-01-baseline-vs-minimal-harness/">P01. 提示詞 vs 規則驅動</a>：完成你的第一個對比實戰任務。</li>
-  <li><a href="./resources/templates/">繁體中文範本</a>：取得最小 harness 範本包（AGENTS.md、feature_list.json、claude-progress.md 等），直接用於你的專案。</li>
+  <li><a href="./resources/templates/">範本指南</a>：取得最小 harness 範本包（AGENTS.md、feature_list.json、claude-progress.md 等），直接用於你的專案。</li>
 </ul>

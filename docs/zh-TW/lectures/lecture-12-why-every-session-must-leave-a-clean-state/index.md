@@ -1,7 +1,7 @@
 [English Version →](../../../en/lectures/lecture-12-why-every-session-must-leave-a-clean-state/)
 
 > 本篇程式碼示例：[code/](https://github.com/walkinglabs/learn-harness-engineering/blob/main/docs/zh-TW/lectures/lecture-12-why-every-session-must-leave-a-clean-state/code/)
-> 實戰練習：[Project 06. 搭建一套完整的 agent 工作環境](./../../projects/project-06-runtime-observability-and-debugging/index.md)
+> 實戰練習：[Project 06. 搭建完整的代理工作環境](./../../projects/project-06-runtime-observability-and-debugging/index.md)
 
 # 第十二講. 每次工作階段結束前都做好交接
 

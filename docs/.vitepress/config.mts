@@ -467,24 +467,24 @@ const zhTWLectureItems = [
 ];
 
 const zhTWProjectItems = [
-  { text: "歡迎", link: "/zh-TW/projects/" },
-  { text: "提示詞驅動 vs 規則驅動", link: "/zh-TW/projects/project-01-baseline-vs-minimal-harness/" },
-  { text: "讓 agent 看懂項目、接住上次的工作", link: "/zh-TW/projects/project-02-agent-readable-workspace/" },
-  { text: "讓 agent 關掉再打開還能接著幹", link: "/zh-TW/projects/project-03-multi-session-continuity/" },
-  { text: "用運行反饋修正 agent 的行為", link: "/zh-TW/projects/project-04-incremental-indexing/" },
-  { text: "讓 agent 自己檢查自己做的對不對", link: "/zh-TW/projects/project-05-grounded-qa-verification/" },
-  { text: "搭建一套完整的 agent 工作環境", link: "/zh-TW/projects/project-06-runtime-observability-and-debugging/" }
+  { text: "歡迎來到專案實戰", link: "/zh-TW/projects/" },
+  { text: "只寫提示詞讓代理做，和定好規則再讓它做，差多少", link: "/zh-TW/projects/project-01-baseline-vs-minimal-harness/" },
+  { text: "讓代理看懂專案、銜接上次的工作", link: "/zh-TW/projects/project-02-agent-readable-workspace/" },
+  { text: "讓代理重啟後還能繼續執行", link: "/zh-TW/projects/project-03-multi-session-continuity/" },
+  { text: "用執行回饋修正代理的行為", link: "/zh-TW/projects/project-04-incremental-indexing/" },
+  { text: "讓代理自己檢查自己做得對不對", link: "/zh-TW/projects/project-05-grounded-qa-verification/" },
+  { text: "搭建完整的代理工作環境", link: "/zh-TW/projects/project-06-runtime-observability-and-debugging/" }
 ];
 
 const zhTWResourceItems = [
-  { text: "資料庫總覽", link: "/zh-TW/resources/" },
-  { text: "繁體中文範本", link: "/zh-TW/resources/templates/" },
-  { text: "繁體中文參考", link: "/zh-TW/resources/reference/" },
-  { text: "進階資源包", link: "/zh-TW/resources/openai-advanced/" }
+  { text: "繁體中文資源庫", link: "/zh-TW/resources/" },
+  { text: "範本指南", link: "/zh-TW/resources/templates/" },
+  { text: "參考資料", link: "/zh-TW/resources/reference/" },
+  { text: "OpenAI 高階資源包", link: "/zh-TW/resources/openai-advanced/" }
 ];
 
 const zhTWSkillItems = [
-  { text: "技能總覽", link: "/zh-TW/skills/" }
+  { text: "Skills（技能集）", link: "/zh-TW/skills/" }
 ];
 
 const jaSourceItems = { lectures: jaLectureItems, projects: jaProjectItems, resources: jaResourceItems, skills: jaSkillItems };

@@ -1,7 +1,7 @@
 [English Version →](../../../en/lectures/lecture-10-why-end-to-end-testing-changes-results/)
 
 > 本篇程式碼示例：[code/](https://github.com/walkinglabs/learn-harness-engineering/blob/main/docs/zh-TW/lectures/lecture-10-why-end-to-end-testing-changes-results/code/)
-> 實戰練習：[Project 05. 讓 agent 自己檢查自己做的對不對](./../../projects/project-05-grounded-qa-verification/index.md)
+> 實戰練習：[Project 05. 讓代理自己檢查自己做得對不對](./../../projects/project-05-grounded-qa-verification/index.md)
 
 # 第十講. 跑通完整流程才算真正驗證
 

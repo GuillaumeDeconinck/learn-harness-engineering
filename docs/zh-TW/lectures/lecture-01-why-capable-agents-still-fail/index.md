@@ -1,7 +1,7 @@
 [English Version →](../../../en/lectures/lecture-01-why-capable-agents-still-fail/)
 
 > 本篇程式碼示例：[code/](https://github.com/walkinglabs/learn-harness-engineering/blob/main/docs/zh-TW/lectures/lecture-01-why-capable-agents-still-fail/code/)
-> 實戰練習：[Project 01. 只寫提示詞讓 agent 做，和定好規則再讓它做，差多少](./../../projects/project-01-baseline-vs-minimal-harness/index.md)
+> 實戰練習：[Project 01. 只寫提示詞讓代理做，和定好規則再讓它做，差多少](./../../projects/project-01-baseline-vs-minimal-harness/index.md)
 
 # 第一講. 模型能力強，不等於執行可靠
 

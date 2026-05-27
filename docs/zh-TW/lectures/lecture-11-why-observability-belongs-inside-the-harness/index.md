@@ -1,7 +1,7 @@
 [English Version →](../../../en/lectures/lecture-11-why-observability-belongs-inside-the-harness/)
 
 > 本篇程式碼示例：[code/](https://github.com/walkinglabs/learn-harness-engineering/blob/main/docs/zh-TW/lectures/lecture-11-why-observability-belongs-inside-the-harness/code/)
-> 實戰練習：[Project 06. 搭建一套完整的 agent 工作環境](./../../projects/project-06-runtime-observability-and-debugging/index.md)
+> 實戰練習：[Project 06. 搭建完整的代理工作環境](./../../projects/project-06-runtime-observability-and-debugging/index.md)
 
 # 第十一講. 讓 agent 的執行過程可觀測
 

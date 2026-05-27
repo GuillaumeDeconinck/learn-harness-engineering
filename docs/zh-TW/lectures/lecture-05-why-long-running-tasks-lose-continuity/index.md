@@ -1,7 +1,7 @@
 [English Version →](../../../en/lectures/lecture-05-why-long-running-tasks-lose-continuity/)
 
 > 本篇程式碼示例：[code/](https://github.com/walkinglabs/learn-harness-engineering/blob/main/docs/zh-TW/lectures/lecture-05-why-long-running-tasks-lose-continuity/code/)
-> 實戰練習：[Project 03. 讓 agent 關掉再打開還能接著幹](./../../projects/project-03-multi-session-continuity/index.md)
+> 實戰練習：[Project 03. 讓代理重啟後還能繼續執行](./../../projects/project-03-multi-session-continuity/index.md)
 
 # 第五講. 讓跨工作階段的任務保持脈絡連續
 
